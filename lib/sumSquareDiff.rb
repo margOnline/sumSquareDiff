@@ -18,12 +18,14 @@ class SumSquareDiff
   def total_square(num_array)
     total = sum_nums(num_array)
     total*total
-
   end
+
   def get_diff(num_array)
     total_square(num_array) - sum_squares(num_array)
   end
+
 end
 
-# sumSquares = SumSquareDiff.new
-# puts sumSquares.get_diff([1,2,3,4])
+num_array = (1..100).to_a
+sumSquares = SumSquareDiff.new
+puts sumSquares.get_diff(num_array)
